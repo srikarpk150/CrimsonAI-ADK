@@ -1,0 +1,66 @@
+# Database Metadata for Course Recommendation System
+# PostgreSQL Cloud SQL Instance with Google ADK Integration
+
+## Core Application Tables
+
+Table: completed_courses
+  id : integer
+  user_id : character varying
+  course_id : character varying
+  semester : character varying
+  year : integer
+  completed_date : timestamp without time zone
+  gpa : double precision
+  credits : integer
+
+Table: course_details
+  id : integer
+  course_id : character varying
+  course_name : character varying
+  department : character varying
+  min_credits : integer
+  max_credits : integer
+  prerequisites : ARRAY
+  offered_semester : character varying
+  course_title : character varying
+  course_description : text
+  course_details : jsonb
+  embedding : USER-DEFINED
+  created_at : timestamp without time zone
+  updated_at : timestamp without time zone
+
+Table: course_trends
+  id : integer
+  course_id : character varying
+  year : integer
+  slots_filled : integer
+  total_slots : integer
+  avg_rating : double precision
+  slots_filled_time : integer
+  created_at : timestamp without time zone
+  avg_gpa : double precision
+  avg_hours_spent : double precision
+
+Table: login
+  user_id : character varying
+  first_name : character varying
+  last_name : character varying
+  email : character varying
+  password : character varying
+  created_at : timestamp without time zone
+  last_login : timestamp without time zone
+
+Table: student_profile
+  user_id : character varying
+  degree_type : character varying
+  major : character varying
+  enrollment_type : character varying
+  gpa : numeric
+  total_credits : integer
+  completed_credits : integer
+  remaining_credits : integer
+  time_availability : jsonb
+  created_at : timestamp without time zone
+  updated_at : timestamp without time zone
+  upcoming_semester : character varying
+

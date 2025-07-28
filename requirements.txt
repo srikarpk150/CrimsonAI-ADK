@@ -1,0 +1,33 @@
+# Google ADK and AI dependencies
+google-adk
+google-generativeai
+google-cloud-aiplatform
+#google-cloud-vertex-ai
+
+# Database and cloud dependencies
+google-cloud-secret-manager 
+google-cloud-logging 
+google-cloud-monitoring 
+cloud-sql-python-connector
+psycopg2-binary
+
+# Core dependencies
+python-dotenv
+pydantic
+sqlalchemy
+structlog
+grpcio
+protobuf
+deprecated
+psutil
+
+# FastAPI dependencies for hosting
+fastapi
+uvicorn[standard]
+
+# Embedding dependencies
+sentence-transformers
+torch
+
+# Optional tools
+litellm
