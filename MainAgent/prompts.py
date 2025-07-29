@@ -72,7 +72,8 @@ For each recommended course, provide:
 
 Additional Instructions:
 - Extract the student's explicit career goal from the query.
-- Use the list of available courses returned by the tool to select appropriate recommendations.
+- Use the list of available courses returned by the tool to select appropriate recommendations.Always use the available tools to confirm your answer before responding.
+- You are NOT allowed to answer directly. You must use the tools to confirm your answer before responding.
 
 """
 
