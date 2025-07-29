@@ -35,7 +35,7 @@ The application uses a sophisticated multi-agent architecture with specialized a
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/srikarpk150/CrimsonAI-ADK.git
    cd CrimsonAI-ADK
    ```
 
